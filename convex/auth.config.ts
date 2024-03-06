@@ -1,4 +1,4 @@
-export default {
+const auth = {
   providers: [
     {
       domain: "https://quality-glider-14.clerk.accounts.dev",
@@ -6,3 +6,4 @@ export default {
     },
   ],
 };
+export default auth;
