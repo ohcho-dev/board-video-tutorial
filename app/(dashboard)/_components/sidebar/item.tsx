@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useOrganization, useOrganizationList } from "@clerk/nextjs";
 
 import { cn } from "@/lib/utils";
-import { Hint } from "../hint";
+import { Hint } from "../../../../components/hint";
 
 interface ItemProps {
   id: string;
