@@ -5,6 +5,7 @@ import { useOthers, useSelf } from "@/liveblocks.config";
 import { UserAvatar } from "./user_avatar";
 import { useEffect, useState } from "react";
 import { ChevronLeft } from "lucide-react";
+import { Hint } from "@/components/hint";
 
 export const Participants = () => {
   const [toggle, setToggle] = useState(false);
@@ -50,9 +51,11 @@ export const Participants = () => {
           />
         )}
         {toggle && (
-          <div className="h-8 w-8 border-2 flex items-center justify-center rounded-full cursor-pointer">
-            <ChevronLeft onClick={() => setToggle(false)} />
-          </div>
+          <Hint label="close">
+            <div className="h-8 w-8 border-2 flex items-center justify-center rounded-full cursor-pointer">
+              <ChevronLeft onClick={() => setToggle(false)} />
+            </div>
+          </Hint>
         )}
       </div>
     </div>
